@@ -1,0 +1,78 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-GrindLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+        [DamageTypes:Grind]
+        [MinCooldownMs:250]
+        [MaxCooldownMs:251]
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:MarinePirateEncounters-Action-GrindLarge]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-GrindLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:MarinePirateEncounters-Chat-GrindLarge]
+
+        [DamageToolAttacker:true]
+        [DamageToolAttackerAmount:11]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Chat-GrindLarge</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:-1]
+        [BroadcastRandomly:true]
+        [Author:{AntennaName}]
+        [Color:Red]
+
+        [MinTime:30]
+        [MaxTime:31]
+
+        [ChatMessages:Ya pondered electric tools were a good idea to use on a soppin' wet ship? Ye be drinkin' the salt water!]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:The wires be soggy, ye best not touch em!]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:The last barnacle-brain that tried cuttin' my ship got zapped too!]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-GrindSmall</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Damage]
+        [DamageTypes:Grind]
+        [MinCooldownMs:250]
+        [MaxCooldownMs:251]
+        [StartsReady:true]
+        [MaxActions:1]
+        [Actions:MarinePirateEncounters-Action-GrindSmall]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-GrindSmall</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [UseChatBroadcast:true]
+        [ChatData:MarinePirateEncounters-Chat-GrindSmall]
+
+        [SelfDestruct:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Chat-GrindSmall</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:-1]
+        [BroadcastRandomly:true]
+        [Author:{AntennaName}]
+        [Color:Red]
+
+        [MinTime:30]
+        [MaxTime:31]
+
+        [ChatMessages:They'll be swabbin' yer bits off the deck for weeks!]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Blow ya down to Davy Jones Locker!]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Yer fish food now!]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

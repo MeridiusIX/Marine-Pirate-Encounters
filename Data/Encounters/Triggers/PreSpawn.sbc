@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-TriggerGroup-PreSpawn</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:MarinePirateEncounters-Trigger-StopRotation]
+        [Triggers:MarinePirateEncounters-Trigger-DisableSpawners]
+
+      </Description>
+
+    </EntityComponent>
+    
+    <!--  StopRotation  -->
+        
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-StopRotation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+        [MinCooldownMs:15000]
+        [MaxCooldownMs:30000]
+
+        [Conditions:MarinePirateEncounters-Condition-StopRotation]
+
+        [MaxActions:-1]
+        [Actions:MarinePirateEncounters-Action-StopRotation]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Condition-StopRotation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [UseConditions:true]
+
+        [CheckGridSpeed:true]
+        [MaxGridSpeed:1]
+        
+        [UnderwaterCheck:true]
+        [IsUnderwater:false]
+        [MinDistanceUnderwater:10]
+
+        [BehaviorModeCheck:true]
+        [CurrentBehaviorMode:EngageTarget]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-StopRotation</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [BehaviorSpecificEventA:true]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:MarinePirateEncounters-Trigger-CalypsoSpawner]
+        [EnableTriggerNames:MarinePirateEncounters-Trigger-HowlSpawner]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:MarinePirateEncounters-Trigger-CalypsoSpawner]
+        [ResetTriggerCooldownNames:MarinePirateEncounters-Trigger-HowlSpawner]
+
+      </Description>
+
+    </EntityComponent>
+    
+    <!--  DisableSpawners  -->
+      
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-DisableSpawners</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerD]
+
+        [MaxActions:-1]
+        [Actions:MarinePirateEncounters-Action-DisableSpawners]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-DisableSpawners</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:MarinePirateEncounters-Trigger-CalypsoSpawner]
+        [DisableTriggerNames:MarinePirateEncounters-Trigger-HowlSpawner]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:MarinePirateEncounters-Trigger-StopRotation]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

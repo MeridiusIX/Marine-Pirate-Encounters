@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Behavior-HowlOfTheAbyss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+        [BehaviorName:Nautical]
+
+        [AutopilotData:MarinePirateEncounters-Autopilot-HowlOfTheAbyss]
+        [TargetData:MarinePirateEncounters-Targeting-Main]
+
+        [TriggerGroups:MarinePirateEncounters-TriggerGroup-Broadside]
+        [TriggerGroups:MarinePirateEncounters-TriggerGroup-PreSpawn]
+        [Triggers:MarinePirateEncounters-Trigger-HowlSpawner]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Autopilot-HowlOfTheAbyss</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [DisableInertiaDampeners:false]
+        [SlowDownOnWaypointApproach:false]
+        [ExtraSlowDownDistance:0]
+        [FlyLevelWithGravity:false]
+        [AllowStrafing:false]
+        [WaypointTolerance:30]
+        [IdealMinSpeed:10]
+        [IdealMaxSpeed:100]
+
+        [RotationMultiplier:0.25]
+
+        [WaypointWaitTimeTrigger:15]
+
+        [EngageDistancePlanet:2000]
+        [DisengageDistancePlanet:2500]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

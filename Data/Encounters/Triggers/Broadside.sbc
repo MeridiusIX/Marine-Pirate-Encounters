@@ -1,0 +1,163 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+    
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-TriggerGroup-Broadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:MarinePirateEncounters-Trigger-Broadside]
+        [Triggers:MarinePirateEncounters-Trigger-StartBroadside]
+        [Triggers:MarinePirateEncounters-Trigger-EndBroadside]
+
+      </Description>
+
+    </EntityComponent>
+    
+    <!--  Broadside  -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-Broadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:Timer]
+        [MinCooldownMs:60000]
+        [MaxCooldownMs:120000]
+        [StartsReady:true]
+        
+        [MaxActions:-1]
+        [ActionExecution:Sequential]
+        [Actions:MarinePirateEncounters-Action-BroadsideStarboard]
+        [Actions:MarinePirateEncounters-Action-BroadsidePort]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-BroadsideStarboard</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeRotationDirection:true]
+        [RotationDirection:Right]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-BroadsidePort</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [ChangeRotationDirection:true]
+        [RotationDirection:Left]
+
+      </Description>
+
+    </EntityComponent>
+    
+    <!--  StartBroadside  -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-StartBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerA]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:MarinePirateEncounters-Action-StartBroadside]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-StartBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:MarinePirateEncounters-Trigger-Broadside]
+        
+        [ManuallyActivateTrigger:true]
+        [ManuallyActivatedTriggerNames:MarinePirateEncounters-Trigger-Broadside]
+        [ForceManualTriggerActivation:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <!--  EndBroadside  -->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-EndBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerB]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:MarinePirateEncounters-Action-EndBroadside]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-EndBroadside</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [DisableTriggers:true]
+        [DisableTriggerNames:MarinePirateEncounters-Trigger-Broadside]
+        [ChangeRotationDirection:true]
+        [RotationDirection:Forward]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

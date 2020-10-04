@@ -1,0 +1,315 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!-- Main Water Encounters -->
+    
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-SharkBait</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [RandomizeWeapons:true]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+        [NonRandomWeaponNames:Missile Turret]
+        [NonRandomWeaponIds:MyObjectBuilder_ConveyorSorter/RailgunxTurretS]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>10.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Shark Bait">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-SharkBait</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-CalypsoEnvy</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [RandomizeWeapons:true]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+        [NonRandomWeaponNames:Missile Turret (Rail)]
+        [NonRandomWeaponIds:MyObjectBuilder_ConveyorSorter/RailgunxTurretS]
+
+        [NonRandomWeaponNames:Rocket Launcher (Homing)]
+        [NonRandomWeaponIds:MyObjectBuilder_SmallMissileLauncher/M1Torpedo]
+
+        [NonRandomWeaponNames:Interior Turret (PD)]
+        [NonRandomWeaponIds:MyObjectBuilder_LargeMissileTurret/AMSlaser]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>6.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Calypso's Envy">
+          <Position>
+            <X>0.0</X>
+            <Y>12.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-CalypsoEnvy</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-HowlOfTheAbyssA</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [RandomizeWeapons:true]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+        [NonRandomWeaponNames:Rocket Launcher (Homing)]
+        [NonRandomWeaponIds:MyObjectBuilder_SmallMissileLauncher/M8Launcher]
+
+        [NonRandomWeaponNames:Interior Turret (PD)]
+        [NonRandomWeaponIds:MyObjectBuilder_LargeMissileTurret/AMSlaser]
+
+        [NonRandomWeaponNames:Missile Turret (BigRail)]
+        [NonRandomWeaponIds:MyObjectBuilder_LargeMissileTurret/RailgunxTurretM]
+
+        [NonRandomWeaponNames:Missile Turret (MediumRail)]
+        [NonRandomWeaponIds:MyObjectBuilder_LargeMissileTurret/RailgunxTurretM]
+
+        [NonRandomWeaponNames:Gatling Turret (Rear)]
+        [NonRandomWeaponIds:MyObjectBuilder_ConveyorSorter/RailgunxTurretS]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Howl of the Abyss">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-HowlOfTheAbyssB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [PlanetaryInstallation:true]
+        [InstallationSpawnsOnWaterSurface:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [RandomizeWeapons:true]
+        [IgnoreWeaponRandomizerTargetGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerTargetGlobalWhitelist:true]
+        [IgnoreWeaponRandomizerGlobalBlacklist:true]
+        [IgnoreWeaponRandomizerGlobalWhitelist:true]
+        [NonRandomWeaponReplacingOnly:true]
+
+        [NonRandomWeaponNames:Rocket Launcher (Homing)]
+        [NonRandomWeaponIds:MyObjectBuilder_SmallMissileLauncher/M8Launcher]
+
+        [NonRandomWeaponNames:Interior Turret (PD)]
+        [NonRandomWeaponIds:MyObjectBuilder_LargeMissileTurret/AMSlaser]
+
+        [NonRandomWeaponNames:Missile Turret (BigRail)]
+        [NonRandomWeaponIds:MyObjectBuilder_ConveyorSorter/RailgunxTurret]
+
+        [NonRandomWeaponNames:Missile Turret (MediumRail)]
+        [NonRandomWeaponIds:MyObjectBuilder_LargeMissileTurret/RailgunxTurretM]
+
+        [NonRandomWeaponNames:Gatling Turret (Rear)]
+        [NonRandomWeaponIds:MyObjectBuilder_ConveyorSorter/RailgunxTurretS]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>0.5</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Howl of the Abyss">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-HowlOfTheAbyss</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+    
+    <!-- Drones / Reinforcements -->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-Cannonball</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Cannonball">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-Crow</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Crow">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-Fighters</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>MarinePirateEncounters-Group-Zodiac</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [RivalAiSpawn:true]
+
+        [FactionOwner:MPRT]
+        [ReplenishSystems:true]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-MPE) Zodiac">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>MarinePirateEncounters-Behavior-Zodiac</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

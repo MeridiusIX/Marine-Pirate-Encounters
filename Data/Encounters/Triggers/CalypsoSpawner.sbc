@@ -1,0 +1,98 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Trigger-CalypsoSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:PlayerNear]
+        [TargetDistance:2500]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [MaxActions:-1]
+        [Actions:MarinePirateEncounters-Action-CalypsoSpawner]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Action-CalypsoSpawner</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [SpawnEncounter:true]
+        [Spawner:MarinePirateEncounters-Spawner-CalypsoSpawnerA]
+        [Spawner:MarinePirateEncounters-Spawner-CalypsoSpawnerB]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Spawner-CalypsoSpawnerA</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+        [SpawnMinCooldown:180]
+        [SpawnMaxCooldown:300]
+        [MaxSpawns:2]
+
+        [SpawnGroups:MarinePirateEncounters-Group-Cannonball]
+
+        [UseRelativeSpawnPosition:true]
+        [RelativeSpawnOffset:{X:0 Y:15 Z:40}]
+        [RelativeSpawnVelocity:{X:0 Y:50 Z:-5}]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>MarinePirateEncounters-Spawner-CalypsoSpawnerB</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+
+        [SpawnMinCooldown:180]
+        [SpawnMaxCooldown:300]
+        [MaxSpawns:2]
+
+        [SpawnGroups:MarinePirateEncounters-Group-Zodiac]
+
+        [UseRelativeSpawnPosition:true]
+        [RelativeSpawnOffset:{X:0 Y:0 Z:70}]
+        [RelativeSpawnVelocity:{X:0 Y:5 Z:50}]
+        [IgnoreSafetyChecks:true]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>
