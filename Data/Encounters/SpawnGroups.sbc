@@ -15,6 +15,7 @@
 
         [PlanetaryInstallation:true]
         [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
 
         [FactionOwner:MPRT]
         [ReplenishSystems:true]
@@ -59,6 +60,7 @@
 
         [PlanetaryInstallation:true]
         [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
 
         [FactionOwner:MPRT]
         [ReplenishSystems:true]
@@ -109,6 +111,7 @@
 
         [PlanetaryInstallation:true]
         [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
 
         [FactionOwner:MPRT]
         [ReplenishSystems:true]
@@ -165,6 +168,7 @@
 
         [PlanetaryInstallation:true]
         [InstallationSpawnsOnWaterSurface:true]
+        [InstallationSpawnsOnDryLand:false]
 
         [FactionOwner:MPRT]
         [ReplenishSystems:true]
